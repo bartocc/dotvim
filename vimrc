@@ -5,6 +5,11 @@ filetype off
 filetype plugin indent on
 let mapleader = ","
 set guifont=Monaco:h12
+if has('gui_running')
+  colo mac_classic
+else
+  colo default
+end
 
 " Bundles
 call pathogen#helptags()
